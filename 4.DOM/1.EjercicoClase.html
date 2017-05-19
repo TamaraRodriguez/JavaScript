@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="utf-8">
+	<title>Ejemplo Leer más</title>
+	<style type="text/css">
+		.oculto{
+			display:none;
+		}
+		.visble{
+			display:inline;
+		}
+	</style>
+
+	<script type="text/javascript">
+		function mostrar(){
+			var elemento = document.getElementById("masInfo");
+			elemento.className="visible";
+		}
+
+		function ocultar(){
+			var elemento = document.getElementById("masInfo");
+			elemento.className="oculto";
+		}
+	</script>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede.
+	<a href="#" onclick="mostrar();">Leer más</a>
+	<!-- <button onmouseover="mostrar();" onmouseout="ocultar();"onclick="alert('Error');">Leer más</button> -->
+	<span id="masInfo" class="oculto">Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque. Donec lacus neque, vehicula in, eleifend vitae, venenatis ac, felis. Donec arcu. Nam sed tortor nec ipsum aliquam ullamcorper. Duis accumsan metus eu urna. Aenean vitae enim. Integer lacus. Vestibulum venenatis erat eu odio. Praesent id metus.<a href="#" onclick="ocultar();">Leer menos</a></span></p>
+	
+</body>
+</html>

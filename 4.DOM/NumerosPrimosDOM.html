@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta name="author" content="Tamara Rodríguez Manzanero">
+	<title>PRIMOS</title>
+	<style type="text/css">
+		#operaciones{
+			width: 800px;
+			height: 700px;
+			padding: 15px 15px;
+			border: 2px solid black;
+		}
+		.titulo{
+			text-align: center; 
+		}
+
+		#respuestas{
+			width: 800px;
+			height: 130px;
+			margin-top: 20px;
+			padding: 15px 15px;
+			border: 2px solid black;
+		}
+	</style>
+	<script>
+		function primo(){
+			// document.getElementById devuelve el elemento que tiene el atributo ID con el valor especificado
+			var num=parseInt(document.getElementById("num").value);
+			var NumeroPrimo=true;
+ 
+			for(i=1;i<num;i++){
+				if(num/i == Math.round(num/i) && i!=1 && i!=num){
+					NumeroPrimo=false;
+					break;
+				}
+			}
+ 
+			if(NumeroPrimo){
+				document.getElementById("resultado").innerHTML="El número "+num+" es primo";
+			}
+			else{
+				document.getElementById("resultado").innerHTML="El número "+num+" NO es primo";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<h1>NUMEROS PRIMOS</h1>
+	<p>Determinar si un valor es primo</p>
+	<div id="operaciones">	
+		<h2 class="titulo">OPERACIONES Y PASOS EN HTML</h2>
+		<p>Vamos a definir la parte que haremos en script:</p>
+		<p>function primo(){</p>
+			<p>var num=parseInt(document.getElementById("num").value);</p>
+			<p>// document.getElementById devuelve el elemento que tiene el atributo ID con el valor especificado</p>
+			<p>var NumeroPrimo=true;</p>
+ 
+			<p>for(i=1;i<num;i++){</p>
+				<p>if(num/i == Math.round(num/i) && i!=1 && i!=num){</p>
+					<p>NumeroPrimo=false;</p>
+					<p>break;</p>
+				<p>}</p>
+			<p>}</p>
+ 
+			<p>if(NumeroPrimo){</p>
+				<p>document.getElementById("resultado").innerHTML="El número "+num+" es primo";</p>
+			<p>}</p>
+			<p>else{</p>
+			<p>document.getElementById("resultado").innerHTML="El número "+num+" NO es primo";</p>
+			<p>}</p>
+		<p>}</p>
+	</div>
+ 
+ 	<div id="respuestas">
+		<h2 class="titulo">RESULTADOS</h2>
+		<input type="text" id="num" value="" placeholder="introduce un número">
+		<button onclick="primo()">Primo</button>
+ 
+		<div id="resultado"></div>
+	</div>
+	
+ 
+</body>
+</html>
