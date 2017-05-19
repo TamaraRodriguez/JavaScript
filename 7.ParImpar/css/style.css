@@ -1,0 +1,141 @@
+body,html{
+	width: 100%;
+    height: 100%;
+    margin: 0;
+	padding: 0;
+	background-image: url("../img/paul-gilmore-211347.jpg");
+	background-position: right top;
+	background-size: cover; /*para que la imagen se centre y ajuste a la caja*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover; 	
+	background-origin: padding-box; /*para que el texto añadido se situe en medio*/
+}
+
+#completa{width: 99%;height: 100%;}
+
+/*Es el recuadro del encabezado*/
+header{
+	width: 99%;
+	height: 174px;
+	font-family: 'albondigasitalic';
+}
+
+/*Fondo del recuadro con borde blanco*/
+#header{width: 99%;height: 174px;}
+
+/*Esta clase es para modificar todo lo que haya dentro de la caja, fondo y elementos en global*/	
+@font-face {
+    font-family: 'albondigasitalic';
+   	src: url('../font/albondigas-webfont.woff2') format('woff2'),
+        url('../font/albondigas-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.titulo_pagina{width: 99%;height: 100%;float: right;}
+
+/*con esta clase h1 modificamos las características y posición del texto*/
+.titulo_pagina h1{
+	margin-top: 60px;
+	font-size: 110px;
+	color: black;
+	text-align:center;
+	font-family:'albondigasitalic'bold;
+	font-weight:bold;
+	}
+
+/*_____________CSS_CAPA CENTRAL______________________________*/
+#contenido{width: 99%;height: 50%;display: block;}
+
+/*capa lateral izquierda*/
+section{width: 59%;height: 140%;float: left;}
+
+.texto{
+	margin-left: 250px;
+	margin-top: 20px;
+	font-size: 110%;
+	color: black;
+	font-family:Arial bold;
+}
+
+/*capa lateral derecha*/
+aside{width: 40%;float: left;}
+
+
+/*_________________BUTTON CON <A>_________________*/
+a{
+	color:#333; 
+	text-decoration:none;
+	background-color:transparent;
+	-webkit-text-decoration-skip:objects;
+}
+
+a:active,a:hover{
+	outline-width:0;
+	color:#ccc; 
+	text-decoration:none;
+}
+
+/*_________________BUTTON CON <A>_________________*/	
+/*Estilo de superposición y caja*/
+.overlay{
+	background:transparent url(../img/overlay.png) repeat top left;
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    z-index:100;
+}
+        
+#dialog2 .window {
+  	position:fixed;
+  	left:0;
+  	top:0;
+  	width:400px;
+  	height:200px;
+  	display:none;
+  	z-index:9999;
+  	padding:20px;
+}
+
+.window {
+  	position:fixed;
+    top:-200px;
+    left:30%;
+    right:30%;
+    background-color:#fff;
+    color:#7F7F7F;
+    padding:20px;
+    border:2px solid #ccc;
+    -moz-border-radius: 20px;
+    -webkit-border-radius:20px;
+    -moz-box-shadow: 0 1px 5px #333;
+    -webkit-box-shadow: 0 1px 5px #333;
+    z-index:101;
+}
+
+#dialog2 h1 {
+  	border-bottom: 1px dashed #7F7F7F;
+  	margin:-20px -20px 0px -20px;
+    padding:10px;
+    background-color:#EFF3FF;
+    color:#7A99FD;
+    text-align: center;
+    -moz-border-radius:20px 20px 0px 0px;
+    -webkit-border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+}
+
+#resultado{text-align: center;}
+
+a.close{
+	float:right;
+    width:26px;
+    height:26px;
+    background:url(../img/cancel.png)repeat top left;
+    margin-top:-145px;
+    margin-right:-30px;
+    cursor:pointer;
+}

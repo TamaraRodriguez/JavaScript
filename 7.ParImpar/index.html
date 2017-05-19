@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Tamara Rodríguez Manzanero">
+	<title>PARA O IMPAR</title>
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="img/Trm.png" sizes="10x10"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/scipt.js"></script>
+	<!--jquery molde-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+	<!-- Estructuración de la pagina web -->
+	<div id="completa">
+		<!--Cabecera-->
+		<header>
+		<!--div son las cajas-->
+			<div id="header">
+				<div class="titulo_pagina">
+					<h1>PAR O IMPAR</h1>
+				</div>
+			</div>
+		</header>
+
+		<div id="contenido">
+			<section class="texto">	
+				<p>Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.</p>
+
+				<!--Recuadro donde se pone en el html y puedas poner el número-->
+				<input type="text" id="num1" value="" placeholder="introduce un número">
+				<!--Botón que pasa a saber el resultado en la VENTANA MODAL-->
+				<!-- <button type= "button" href="#dialog2" name="modal" onclick="parImpar()">COMPROBAR</button> -->
+            	<a type= "button" href="#dialog2" name="modal" onclick="parImpar()">COMPROBAR</a>
+
+				<!-- _______________VENTANA MODAL___________ -->
+				<div class="overlay" id="overlay" style="display:none;"></div>
+				<div id="dialog2" class="window">
+					<h1>RESULTADO</h1><br/><br/>
+					<div id="resultado"></div><br/>
+      				<a type="button" value="X" class="close"/></a>
+      			</div>
+			</section>
+
+		</div>
+	</div>
+</body>
+</html>
