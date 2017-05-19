@@ -1,0 +1,10 @@
+		#caja{
+			width: 100%;
+			height: 100%;
+			border: 1px black solid;
+		}
+		
+		.default{
+			font-family: arial;
+			font-size: 15px;
+		}
