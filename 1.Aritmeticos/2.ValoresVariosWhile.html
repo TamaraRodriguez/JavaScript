@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Tamara Rodríguez Manzanero">
+	<title>Valor de A, B, C, X e Y</title>
+
+	<script type="text/javascript">
+
+		var a = 9;
+		var b = 4;
+		var c = 0;
+		var x = 77;
+		var i = 0;
+
+		while((c < 10)||(x > 100)){
+			i = a + c + x - i;
+			if(b < 14){
+				while(c < 7){
+					c = c + 1;
+					x = x + 3;
+					b = b + 2;
+				}
+			}
+			else{
+				c = i - 10;
+			}
+			c = c + 4;
+		}
+
+	</script>
+</head>
+<body>
+
+	<h1>Valores: de A, B, C, X e Y</h1>
+
+	<p>Resuelve el valor de A, B, C, X e Y:</p>
+	<p>A = 9</p>
+	<p>B = 4</p>
+	<p>C = 0</p>
+	<p>X = 77</p>
+	<p>I = 0</p><br>
+
+	<p>Mientras C es menor a 10 y X es mayor que 100, entonces: </p>
+	<p>I = A + C + X - I</p>
+
+		<p>Si B es menor que 14, entonces: </p>
+			<p>Mientras C es menor que 7, entonces</p>
+			<p>C = C + 1</p>
+			<p>X = X + 3</p>
+			<p>B = B + 2</p>
+			<p>Fin mientras</p>
+
+		<p>Sino:</p>
+		<p>C = I - 10</p>
+		<p>Fin Si</p>
+
+		<p>C = C + 4</p>
+	<p>Fin mientras</p>
+
+	<h3>Los resultados son: </h3>
+
+	<button onclick="alert(a)";>El valor de A es: </button>
+    <button onclick="alert(b)";>El valor de B es: </button>
+    <button onclick="alert(c)";>El valor de C es: </button>
+    <button onclick="alert(x)";>El valor de X es: </button>
+    <button onclick="alert(i)";>El valor de I es: </button>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Tamara Rodríguez">
+	<title>La suma de los pares entre 2 numeros</title>
+	<script type="text/javascript">
+	var suma= 0;
+	var num1 = prompt("Introduce un número");
+		num1 = Number(num1);
+	var num2 = prompt("Introduce un número");
+		num2 = Number(num2);
+
+	if(num1> num2) {
+		may= num1;
+		men= num2;
+	}else{
+		may=num2;
+		men=num1;
+	}  
+
+	while(men<= may){
+		if(men%2 == 0) {
+			suma= suma + men;
+		}
+		men= men + 1;
+	}
+
+	document.write("La suma es: "+ suma);
+	</script>
+</head>
+<body>
+	<h1>Suma pares</h1>
+	<p>Realizamos un algoritmo donde nos suma los números pares comprendidos entre dos números que introduce el usuario.</p>
+</body>
+</html>

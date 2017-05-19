@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Tamara Rodríguez Manzanero">
+	<title>CUENTA CIFRAS NUMERO</title>
+
+	<style type="text/css">
+		#operaciones{
+			width: 800px;
+			height: 250px;
+			padding: 15px 15px;
+			border: 2px solid black;
+		}
+		.titulo{
+			text-align: center; 
+		}
+
+		#respuestas{
+			width: 800px;
+			height: 130px;
+			margin-top: 20px;
+			padding: 15px 15px;
+			border: 2px solid black;
+		}
+	</style>
+	<script type="text/javascript">
+		// var long=0;
+		var num = prompt("Introduce un número de muestra");
+		var long = num.length;
+	</script>
+</head>
+
+<body>
+	<div id="operaciones">	
+		<h2 class="titulo">OPERACIONES Y PASOS EN HTML</h2>
+
+		<p>Definimos las variables: </p>
+		<p>LONG = 0</p>
+
+		<p>1º paso: Nos pide: "Introduce un número" (Num), en la ventana emergente del principio al cargar la página.</p>
+
+		<p>Utilizamos length:</p>
+		<p>LONG = num.length</p>
+	</div>
+
+	<div id="respuestas">
+		<h2 class="titulo">RESULTADOS</h2>
+		<script type="text/javascript">
+			document.write("El número de caractares de " + num + " es: " + long + "<br/>");
+		</script>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ES">
+<meta charset="utf-8">
+<meta name="author" content="TamaraRodríguezManzanero">
+<head>
+	<title>Mayor y menor</title>
+	<style type="text/css">
+		#operaciones{
+			width: 800px;
+			height: 500px;
+			padding: 15px 15px;
+			border: 2px solid black;
+		}
+		.titulo{
+			text-align: center; 
+		}
+
+		#respuestas{
+			width: 800px;
+			height: 130px;
+			margin-top: 20px;
+			padding: 15px 15px;
+			border: 2px solid black;
+		}
+	</style>
+	<script type="text/javascript">	
+		var num1 = prompt("Introduce un número");
+		num1 = Number(num1);
+		var men = num1;
+		var may = num1;
+		var respuesta ='si';
+  			
+			do{
+				var num2 = prompt("Introduce un número");
+				num2 = Number(num2);
+				if(num2 < men){
+					men = num2;
+				}
+				if(num2 > may){
+					may = num2;
+				}
+				respuesta = prompt("¿Quieres introducir otro número? (no) para salir");
+			}
+			while(respuesta != 'no');
+	</script>
+
+</head>
+
+<body>
+
+	<h1>El mayor y el menor</h1>
+	<p>Vamos a calcular el número menor y el número mayor de las notas que introduzca el usuario, sin definir el límite de números que quiera introducir el usuario.</p>
+	
+	<div id="operaciones">	
+		<h2 class="titulo">OPERACIONES Y PASOS EN HTML</h2>
+
+		<p>Definimos las variables: </p>
+		<p>MEN = NUM1</p>
+		<p>MAY = NUM1</p>
+		<p>RESPUESTA = si</p>
+
+		<p>1º paso: Nos pide: "Introduce un número" (NUM1), en la ventana del principio al cargar la página.</p>
+
+		<p>Utilizamos el paso repetir (do...while)</p>
+		<p>2º paso: Nos aparace una segunda ventana en pantalla que nos pide otro número (NUM2)</p>
+		<p>Si (IF) NUM2 es menor que MEN, entonces:</p>
+		<p>MEN = NUM2</p>
+		<P>Si (IF) NUM2 es mayor que MAY, entonces</P>
+		<p>MAY = NUM2</p>
+	
+
+		<p>3º paso: Aparece una ventana emergente "¿Quieres introducir otro número? (no) para salir: Respondemos (Si/No)</p>
+
+		<p>Nos muestra nuestro resultado en pantalla</p>
+	</div>
+
+	<div id="respuestas">
+		<h2 class="titulo">RESULTADOS</h2>
+		<script type="text/javascript">
+			document.write("El número menor es:" + men + "<br/>");
+			document.write("El número mayor es:" + may + "<br/>");
+		</script>
+	</div>
+</body>
+</html>

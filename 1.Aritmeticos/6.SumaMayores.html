@@ -1,0 +1,63 @@
+<!--Realiza un algoritmo para un progama que lea un número de muestra. A continuación, leerá 20 números y nos mostarará la suma de todos los números de este grupo que sean mayores al número de muestra. -->
+
+
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Tamara Rodríguez Manzanero">
+	<title>Suma los Mayores</title>
+
+	<style type="text/css">
+		#operaciones{
+			width: 800px;
+			height: 350px;
+			padding: 15px 15px;
+			border: 2px solid black;
+		}
+		.titulo{
+			text-align: center; 
+		}
+	</style>
+
+	<script type="text/javascript">
+		var suma=0;
+		var numMues = prompt("Introduce un número de muestra");
+		numMues = Number(numMues);
+
+		for (i = 0; i < 10; i++) {
+			var num = prompt("Introducir número");
+			num = Number(num);
+			if (num>numMues) {
+				suma = suma + num;
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<h1>SUMA LOS VALORES MAYORES QUE...</h1>
+	<p>Realiza un algoritmo para un progama que lea un número de muestra. A continuación, leerá 10 números y nos mostarará la suma de todos los números de este grupo que sean mayores al número de muestra.</p>
+
+	<div id="operaciones">	
+		<h2 class="titulo">OPERACIONES Y PASOS EN HTML</h2>
+
+		<p>Definimos las variables: </p>
+		<p>SUMA = 0</p>
+
+		<p>1º paso: Nos pide: "Introduce un número de muestra" (NumMuestra), en la ventana del principio al cargar la página.</p>
+
+		<p>Utilizamos el paso para (for...)</p>
+		<p>2º paso: Nos aparace una segunda ventana en pantalla que nos pide otro número (Num)</p>
+		<p>Si (IF) Num es mayor que NumMues, entonces:</p>
+		<p>SUMA = SUMA + Num</p>
+
+		<p>Nos iran apareciendo ventanas emergentes hasta llegar a completar los 10 números que nos pide el ejercicio.</p>
+	</div>
+
+	<h3>La suma de todos los número mayores es: </h3>
+	<button onclick="alert(suma)";>Resultado</button>
+
+	
+</body>
+</html>

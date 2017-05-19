@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Tamara Rodríguez Manzanero">
+	<title>Calcular media</title>
+
+	<script type="text/javascript">		
+		var suma = 0;
+		var med = 0;
+		var a = prompt("¿Cuántos números quiere introducir?");
+		a = Number(a);
+	</script>
+
+</head>
+<body>
+
+	<h1>La Media</h1>
+	<p>Vamos a calcular la media de las notas que introduzca el usuario.</p>
+	<p>Nos muestra: ¿Cuántos números quiere introducir?: en la ventana del principio al cargar la página.</p>
+
+	<p>Para I igual a 0 Hasta que el array (A) -1 con paso 1, hacer: </p>
+	<p>Nos muestra: Introduce un número, que es leido por la ventana que aparece al principio.</p>
+
+	<p>suma = suma + num</p>
+
+	<script type="text/javascript">
+		for(i = 0; i <= a -1; i++){
+			var num = prompt("Introduce un número");
+			num = Number(num);
+			suma = suma + num;
+		}
+		med = suma / a;
+	</script>
+
+	<p onclick="alert(suma)";>Resultado de la suma</p>
+	<p>Fin Para</p>
+	<p>med =  suma / i</p>
+
+	<h3>La media es: </h3>
+	<button onclick="alert(med)";>Resultado</button>
+</body>
+</html>

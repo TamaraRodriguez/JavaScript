@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta name="author" content="Tamara Rodríguez Manzanero">
+	<title>PAR E IMPAR</title>
+	<style type="text/css">
+		#operaciones{
+			width: 800px;
+			height: 550px;
+			padding: 15px 15px;
+			border: 2px solid black;
+		}
+		.titulo{
+			text-align: center; 
+		}
+		#respuestas{
+			width: 800px;
+			height: 130px;
+			margin-top: 20px;
+			padding: 15px 15px;
+			border: 2px solid black;
+		}
+	</style>
+	<script type="text/javascript">
+		var pos = 5; 
+    	var pares = 0; 
+    	var impares = 0; 
+		for(i = 0; i < pos; i++){ 
+			var num1 = prompt("Introduce un número");
+			num1 = Number(num1);
+   			if(num1 % 2 == 0){ 
+        		pares = pares + num1;
+    		}
+    		else{ 
+        		impares = impares + num1;
+    		} 
+		} 
+	</script>
+</head>
+<body>
+	<h1>NUMEROS PARES E IMPARES</h1>
+	<p>Realiza un algoritmo para un progama que lea 5 números. A continuación, nos mostarará la suma de todos los números pares y la suma de todos los números impares que introduzca que usuario.</p>
+	<div id="operaciones">	
+		<h2 class="titulo">OPERACIONES Y PASOS EN JAVASCRIPT</h2>
+		<p>Nos iran apareciendo ventanas emergentes hasta llegar a completar los 5 números que nos pide el ejercicio.</p>
+		<p>var pos = 5;</p>
+    	<p>var pares = 0;</p>
+    	<p>var impares = 0;</p>
+		<p>for(i = 0; i < pos; i++){</p>
+			<p>var num1 = prompt("Introduce un número");
+			<p>num1 = Number(num1);</p>
+   			<p>if(num1 % 2 == 0){</p>
+        		<p>pares = pares + num1;</p>
+    		<p>}</p>
+    		<p>else{ </p>
+        		<p>impares = impares + num1;</p>
+    		<p>}</p>
+		<p>}</p> 
+	</div>
+
+	<div id="respuestas">
+		<h2 class="titulo">RESULTADOS</h2>
+		<script type="text/javascript">
+			document.write("La suma de los números pares es: " + pares + "<br/>");
+			document.write("La suma de los números impares es: " + impares + "<br/>");
+		</script>
+	</div>
+</body>
+</html>
