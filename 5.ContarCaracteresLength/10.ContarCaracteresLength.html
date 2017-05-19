@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="utf-8">
+ 	<meta name="author" content="Tamara Rodríguez Manzanero">
+	<title>TEXTO MAYOR</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<h1>TEXTO MAYOR</h1>
+	<p>Crea un código, donde podamos leer 5 textos y nos diga cual es el texto con mayor caracteres.</p>
+	<p>Para comenzar pulsa el botón.</p>
+	<button onclick="texto()">Comenzar</button>
+
+	<div id="operaciones">	
+		<h2 class="titulo">OPERACIONES Y PASOS EN JAVASCRIPT</h2>
+		<p>Nos iran apareciendo ventanas emergentes para introducir los 5 textos.</p>
+		<p>function texto(){</p>
+    		<p>var text= 0;</p>
+			<p>for(i = 0; i < 5; i++){ </p>
+				<p>var text1 = prompt("Introduce un primer texto");</p>
+				<p>var long1 = text1.length;</p>
+   				<p>if(long1 >= text){ </p>
+        			<p>text=long1;</p>
+    			<p>}</p>
+    		<p>}</p>
+    		<p>alert("El texto mas largo tiene: "+ text + " caracteres. Dale aceptar para ver el texto.");</p>
+    		<p>alert(mostrar);</p>
+		<p>}</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#operaciones{
+	width: 800px;
+	height: 500px;
+	margin-top: 20px;
+	padding: 15px 15px;
+	border: 2px solid black;
+}
+.titulo{
+	text-align: center; 
+}
