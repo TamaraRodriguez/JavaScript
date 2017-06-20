@@ -1,0 +1,83 @@
+body,html{
+	width: 100%;
+    height: 100%;
+    margin: 0;
+	padding: 0;
+	background-image: url("../img/alex-read-102359.jpg");
+	background-position: right top;
+	background-size: cover; /*para que la imagen se centre y ajuste a la caja*/
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;	 	
+	background-origin: padding-box; /*para que el texto añadido se situe en medio*/
+}
+
+#completa{width: 99%;height: 100%;}
+
+/*Es el recuadro del encabezado*/
+header{
+	width: 99%;
+	height: 100px;
+	font-family: 'androidandroid';
+}
+
+/*Fondo del recuadro con borde blanco*/
+#header{width: 99%;height: 174px;}
+
+/*Esta clase es para modificar todo lo que haya dentro de la caja, fondo y elementos en global*/	
+@font-face {
+    font-family: 'androidandroid';
+    src: url('../font/android-webfont.woff2') format('woff2'),
+        url('../font/android-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.titulo_pagina{width: 99%;height: 100%;float: right;}
+
+/*con esta clase h1 modificamos las características y posición del texto*/
+.titulo_pagina h1{
+	margin-top: 60px;
+	font-size: 110px;
+	color: black;
+	text-align:center;
+	font-family:'androidandroid';
+	font-weight:bold;
+}
+
+/*_____________CSS_CAPA CENTRAL______________________________*/
+#contenido{width: 99%;height: 50%;display: block;}
+
+/*capa lateral izquierda*/
+section{width: 70%;height: 140%;float: left;}
+
+.texto{
+	margin-left: 250px;
+	margin-top: 20px;
+	font-size: 120%;	
+	color: black;
+	font-family:Arial bold;
+}
+
+#respuesta { 
+	margin-left: 50px;
+   	width: 500px;
+    border: 1px solid grey;
+    float: right;
+    min-height: 100px;
+    background-color: white; 
+}
+
+label  input{
+	width: 700px; 
+	height:50px;
+	border: 1px solid grey;
+	background-color: white; 
+	margin-left: 10px;
+	text-align: center;
+}
+
+input{
+	margin-right: 20px;
+	margin-left: 10px;
+}
