@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Tamara Rodríguez Manzanero">
+	<title>Tres Números</title>
+	<!--Favicon-->
+	<link rel="icon" type="image/png" href="img/Trm.png" sizes="10x10"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/scipt.js"></script>
+	<!--jquery molde-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+	<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+
+<body>
+	<!-- Estructuración de la pagina web -->
+	<div id="completa">
+		<!--Cabecera-->
+		<header>
+		<!--div son las cajas-->
+			<div id="header">
+				<div class="titulo_pagina">
+					<h1>Tres Números</h1>
+				</div>
+			</div>
+		</header>
+
+		<div id="contenido">
+			<section class="texto">	
+				<p>Escribir el código de una función a la que se pasa como parámetro un número entero y devuelve como resultado una cadena de texto que indica si el número es par o impar. Mostrar por pantalla el resultado devuelto por la función.</p>
+				
+				<h3>Número mayor</h3>
+				<p>Se cargan por teclado tres números distintos. Mostrar por pantalla el mayor de ellos.
+				<a type= "button" href="#dialog2" name="modal" onclick="mayores()">¡¡Empezar!!</a>
+
+				<h3>Positivo, cero o negativo</h3>
+				<p>Se ingresa por teclado un valor entero, mostrar una leyenda que indique si el número es positivo, cero o negativo.
+		  		<a type= "button" href="#dialog2" name="modal" onclick="positivo()">¡¡Empezar!!</a>
+
+		  		<h3>Cifras de un número</h3>
+				<p>Debes confeccionar un programa que permita cargar un número entero positivo de hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras.
+		  		<a type= "button" href="#dialog2" name="modal" onclick="cifras()">¡¡Empezar!!</a>            	
+
+				<!-- _______________VENTANA MODAL___________ -->
+				<div class="overlay" id="overlay" style="display:none;"></div>
+				<div id="dialog2" class="window">
+					<h1>RESULTADO</h1><br/><br/>
+					<div id="resultado"></div><br/>
+      				<a type="button" value="X" class="close"/></a>
+      			</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
